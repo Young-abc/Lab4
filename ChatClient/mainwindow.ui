@@ -34,10 +34,10 @@
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout">
             <item>
-             <widget class="QTextEdit" name="textEdit"/>
+             <widget class="QTextEdit" name="roomTextEdit"/>
             </item>
             <item>
-             <widget class="QListWidget" name="listWidget">
+             <widget class="QListWidget" name="userListWidget">
               <property name="minimumSize">
                <size>
                 <width>120</width>
@@ -57,17 +57,17 @@
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_2">
             <item>
-             <widget class="QLineEdit" name="lineEdit_5"/>
+             <widget class="QLineEdit" name="sayLineEdit"/>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_2">
+             <widget class="QPushButton" name="sayButton">
               <property name="text">
                <string>发送</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_3">
+             <widget class="QPushButton" name="logoutButton">
               <property name="text">
                <string>退出</string>
               </property>
@@ -131,7 +131,7 @@
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton">
+            <widget class="QPushButton" name="loginButton">
              <property name="text">
               <string>登录聊天室</string>
              </property>

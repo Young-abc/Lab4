@@ -237,6 +237,7 @@ Makefile: ../../../ChatClient/ChatClient.pro D:/Qt_course/Qt/6.5.3/mingw_64/mksp
 		../../../ChatClient/ChatClient.pro \
 		D:/Qt_course/Qt/6.5.3/mingw_64/lib/Qt6Widgets.prl \
 		D:/Qt_course/Qt/6.5.3/mingw_64/lib/Qt6Gui.prl \
+		D:/Qt_course/Qt/6.5.3/mingw_64/lib/Qt6Network.prl \
 		D:/Qt_course/Qt/6.5.3/mingw_64/lib/Qt6Core.prl \
 		D:/Qt_course/Qt/6.5.3/mingw_64/lib/Qt6EntryPoint.prl \
 		D:/Qt_course/Qt/6.5.3/mingw_64/mkspecs/features/build_pass.prf
@@ -408,6 +409,7 @@ D:/Qt_course/Qt/6.5.3/mingw_64/mkspecs/features/lex.prf:
 ../../../ChatClient/ChatClient.pro:
 D:/Qt_course/Qt/6.5.3/mingw_64/lib/Qt6Widgets.prl:
 D:/Qt_course/Qt/6.5.3/mingw_64/lib/Qt6Gui.prl:
+D:/Qt_course/Qt/6.5.3/mingw_64/lib/Qt6Network.prl:
 D:/Qt_course/Qt/6.5.3/mingw_64/lib/Qt6Core.prl:
 D:/Qt_course/Qt/6.5.3/mingw_64/lib/Qt6EntryPoint.prl:
 D:/Qt_course/Qt/6.5.3/mingw_64/mkspecs/features/build_pass.prf:

@@ -31,7 +31,7 @@ public:
     QVBoxLayout *verticalLayout_2;
     QGroupBox *groupBox;
     QVBoxLayout *verticalLayout;
-    QPlainTextEdit *plainTextEdit;
+    QPlainTextEdit *logEditor;
     QHBoxLayout *horizontalLayout;
     QSpacerItem *horizontalSpacer;
     QPushButton *startStopButton;
@@ -51,10 +51,10 @@ public:
         groupBox->setObjectName("groupBox");
         verticalLayout = new QVBoxLayout(groupBox);
         verticalLayout->setObjectName("verticalLayout");
-        plainTextEdit = new QPlainTextEdit(groupBox);
-        plainTextEdit->setObjectName("plainTextEdit");
+        logEditor = new QPlainTextEdit(groupBox);
+        logEditor->setObjectName("logEditor");
 
-        verticalLayout->addWidget(plainTextEdit);
+        verticalLayout->addWidget(logEditor);
 
 
         verticalLayout_2->addWidget(groupBox);

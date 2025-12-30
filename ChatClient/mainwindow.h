@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "chatclient.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -17,7 +17,20 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_loginButton_clicked();
+
+    void on_sayButton_clicked();
+
+    void on_logoutButton_clicked();
+
+    void connectedToserver();
+
+    void messageReceived(const QString &text);
+
 private:
     Ui::MainWindow *ui;
+
+    ChatClient *m_chatClient;
 };
 #endif // MAINWINDOW_H
