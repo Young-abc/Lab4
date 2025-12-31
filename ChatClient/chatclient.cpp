@@ -24,7 +24,7 @@ void ChatClient::onReadyRead()
             // emit messageReceived(QString::fromUtf8(jsonData));
             QJsonParseError parseError;
             const QJsonDocument jsonDoc = QJsonDocument::fromJson(jsonData, &parseError);
-            if (parseError.error != QJsonParseError::NoError)
+            if (parseError.error == QJsonParseError::NoError)
             {
                 if (jsonDoc.isObject()) {
                     // emit logMessage(QJsonDocument(jsonDoc).toJson(QJsonDocument::Compact));

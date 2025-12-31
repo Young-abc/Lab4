@@ -44,7 +44,7 @@ static constexpr auto qt_meta_stringdata_CLASSChatClientENDCLASS = QtMocHelpers:
     "messageReceived",
     "text",
     "jsonReceived",
-    "docQbj",
+    "docObj",
     "onReadyRead",
     "sendMessage",
     "type",
@@ -83,7 +83,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSChatClientENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(22, 15),  // "messageReceived"
         QT_MOC_LITERAL(38, 4),  // "text"
         QT_MOC_LITERAL(43, 12),  // "jsonReceived"
-        QT_MOC_LITERAL(56, 6),  // "docQbj"
+        QT_MOC_LITERAL(56, 6),  // "docObj"
         QT_MOC_LITERAL(63, 11),  // "onReadyRead"
         QT_MOC_LITERAL(75, 11),  // "sendMessage"
         QT_MOC_LITERAL(87, 4),  // "type"
@@ -99,7 +99,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSChatClientENDCLASS_t qt_meta_st
     "messageReceived",
     "text",
     "jsonReceived",
-    "docQbj",
+    "docObj",
     "onReadyRead",
     "sendMessage",
     "type",

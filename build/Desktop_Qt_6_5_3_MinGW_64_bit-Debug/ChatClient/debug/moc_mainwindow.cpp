@@ -8,7 +8,6 @@
 
 #include "../../../../ChatClient/mainwindow.h"
 #include <QtCore/qmetatype.h>
-#include <QtCore/QList>
 
 #if __has_include(<QtCore/qtmochelpers.h>)
 #include <QtCore/qtmochelpers.h>
@@ -44,7 +43,7 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "",
     "on_sayButton_clicked",
     "on_logoutButton_clicked",
-    "connectedToserver",
+    "connectedToServer",
     "messageReceived",
     "sender",
     "text",
@@ -53,8 +52,8 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "userJoined",
     "user",
     "userLeft",
-    "userList",
-    "list"
+    "userListReceived",
+    "userlist"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
@@ -73,8 +72,8 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata11[11];
     char stringdata12[5];
     char stringdata13[9];
-    char stringdata14[9];
-    char stringdata15[5];
+    char stringdata14[17];
+    char stringdata15[9];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -85,7 +84,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(34, 0),  // ""
         QT_MOC_LITERAL(35, 20),  // "on_sayButton_clicked"
         QT_MOC_LITERAL(56, 23),  // "on_logoutButton_clicked"
-        QT_MOC_LITERAL(80, 17),  // "connectedToserver"
+        QT_MOC_LITERAL(80, 17),  // "connectedToServer"
         QT_MOC_LITERAL(98, 15),  // "messageReceived"
         QT_MOC_LITERAL(114, 6),  // "sender"
         QT_MOC_LITERAL(121, 4),  // "text"
@@ -94,15 +93,15 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(146, 10),  // "userJoined"
         QT_MOC_LITERAL(157, 4),  // "user"
         QT_MOC_LITERAL(162, 8),  // "userLeft"
-        QT_MOC_LITERAL(171, 8),  // "userList"
-        QT_MOC_LITERAL(180, 4)   // "list"
+        QT_MOC_LITERAL(171, 16),  // "userListReceived"
+        QT_MOC_LITERAL(188, 8)   // "userlist"
     },
     "MainWindow",
     "on_loginButton_clicked",
     "",
     "on_sayButton_clicked",
     "on_logoutButton_clicked",
-    "connectedToserver",
+    "connectedToServer",
     "messageReceived",
     "sender",
     "text",
@@ -111,8 +110,8 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     "userJoined",
     "user",
     "userLeft",
-    "userList",
-    "list"
+    "userListReceived",
+    "userlist"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -171,7 +170,7 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_logoutButton_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'connectedToserver'
+        // method 'connectedToServer'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'messageReceived'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
@@ -186,9 +185,9 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'userLeft'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
-        // method 'userList'
+        // method 'userListReceived'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QList<QString> &, std::false_type>
+        QtPrivate::TypeAndForceComplete<const QStringList &, std::false_type>
     >,
     nullptr
 } };
@@ -202,12 +201,12 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->on_loginButton_clicked(); break;
         case 1: _t->on_sayButton_clicked(); break;
         case 2: _t->on_logoutButton_clicked(); break;
-        case 3: _t->connectedToserver(); break;
+        case 3: _t->connectedToServer(); break;
         case 4: _t->messageReceived((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
         case 5: _t->jsonReceived((*reinterpret_cast< std::add_pointer_t<QJsonObject>>(_a[1]))); break;
         case 6: _t->userJoined((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 7: _t->userLeft((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 8: _t->userList((*reinterpret_cast< std::add_pointer_t<QList<QString>>>(_a[1]))); break;
+        case 8: _t->userListReceived((*reinterpret_cast< std::add_pointer_t<QStringList>>(_a[1]))); break;
         default: ;
         }
     }
