@@ -197,7 +197,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 654, 25));
+        menubar->setGeometry(QRect(0, 0, 654, 21));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -214,7 +214,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "\350\201\212\345\244\251\345\256\244\345\256\242\346\210\267\347\253\257", nullptr));
-        label->setText(QCoreApplication::translate("MainWindow", "yang\350\201\212\345\244\251\345\256\244", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "\346\235\250\346\263\275\344\273\201\347\232\204\350\201\212\345\244\251\345\256\244\357\274\2102023414290236\357\274\211", nullptr));
         sayButton->setText(QCoreApplication::translate("MainWindow", "\345\217\221\351\200\201", nullptr));
         logoutButton->setText(QCoreApplication::translate("MainWindow", "\351\200\200\345\207\272", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "\346\234\215\345\212\241\345\231\250\345\234\260\345\235\200\357\274\232", nullptr));
